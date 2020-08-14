@@ -54,8 +54,8 @@ df.head(10)
 | ```BJB```               | ```int64```   | ```The number of times bond stated "Bond, James Bond."```                                         |
 | ```Kills_Bond```        | ```int64```   | ```The number of people Bond killed.```                                                          |
 | ```Kills_Others```      | ```int64```   | ```The number of people killed by someone other than bond.```                                    |
-| ```Top_100```           | ```int64```   | ```A flag where 1 represents the title song made Billboard/UK top 100 song, 0 mean it didn't.``` |
-| ```Video_Game```        | ```int64```   | ```A flag where 1 represents the title was made into a video game, 0 means it didn't.```         |
+| ```Top_100```           | ```int64```   | ```A flag where 1 means the movie had Billboard/UK top 100 song, 0 mean it didn't.``` |
+| ```Video_Game```        | ```int64```   | ```A flag where 1 means the movie was made into a video game, 0 means it didn't.```         |
 
 # References
 This package leverages and adds to Derek S. Young and his [HoRM](https://rdrr.io/cran/HoRM/man/JamesBond.html) package
