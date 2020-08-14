@@ -19,3 +19,4 @@ bin-release/
 /venv/
 /jamesbond.iml
 /.idea/
+/.coverage
