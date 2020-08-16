@@ -1,27 +1,23 @@
 from setuptools import setup, find_packages
 
-with open('README.md') as readme_file:
-    README = readme_file.read()
+with open('/Users/andrewblock/Documents/github/jamesbond/README.md') as readme_file:
+    readme = readme_file.read()
 
+with open('/Users/andrewblock/Documents/github/jamesbond/requirements.txt') as fp:
+    requirements = fp.read().splitlines()
 
-setup_args = dict(
+setup(
     name='jamesbond',
-    version='0.0.12',
+    version='0.0.14',
     description='James Bond tabular data package in Pandas dataframe',
     long_description_content_type="text/markdown",
-    long_description=README,
+    long_description=readme,
+    install_requires=requirements,
     license='MIT',
-    packages=find_packages(),
+    packages=find_packages(exclude=("tests",)),
     author='Andrew Block',
     author_email='andrewblock87@gmail.com',
     keywords=['Bond', 'JamesBond', 'James Bond', '007'],
     url='https://github.com/andrew-block/jamesbond',
     download_url='https://test.pypi.org/project/jamesbond/'
 )
-
-install_requires = [
-    'pandas>=1.1.0'
-]
-
-if __name__ == '__main__':
-    setup(**setup_args, install_requires=install_requires)
